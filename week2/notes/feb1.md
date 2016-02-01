@@ -36,3 +36,11 @@ This suggests that there might be some problems with using pandoc for converting
 - [FAQ](http://bit.ly/knitr-faq)
 
 I didn't immediately see these on the knitr website when I was first reading it, so I'm saving them here so I don't lose them again.
+
+#### Running External Code
+Write R code in external R scripts, and use `read_chunk()` to read them into the current document.
+
+    {r cache=FALSE}
+    knitr::read_chunk('113-foo.R')
+    {r test-a}
+    {r test-b}
