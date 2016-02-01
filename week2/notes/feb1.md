@@ -27,3 +27,12 @@ This looks like it could be handy.
 
 - [How to convert a scientific manuscript from LaTeX to Word using Pandoc?](https://tex.stackexchange.com/questions/111886/how-to-convert-a-scientific-manuscript-from-latex-to-word-using-pandoc)
 This suggests that there might be some problems with using pandoc for converting between latex to docx file formats.
+
+
+#### Knitr Documentation
+- [The Knitr Book](https://github.com/yihui/knitr/releases/download/doc/DDR-Yihui-Xie-Chap1-3.pdf)
+- [The Manual](https://github.com/yihui/knitr/releases/download/doc/knitr-manual.pdf)
+- [The Graphics Manual](https://github.com/yihui/knitr/releases/download/doc/knitr-graphics.pdf)
+- [FAQ](http://bit.ly/knitr-faq)
+
+I didn't immediately see these on the knitr website when I was first reading it, so I'm saving them here so I don't lose them again.
