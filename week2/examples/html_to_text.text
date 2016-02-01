@@ -1,0 +1,3 @@
+LaTeX:
+
+    pandoc -s README -o example4.tex
