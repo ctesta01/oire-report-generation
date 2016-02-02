@@ -41,6 +41,6 @@ I didn't immediately see these on the knitr website when I was first reading it,
 Write R code in external R scripts, and use `read_chunk()` to read them into the current document.
 
     {r cache=FALSE}
-    knitr::read_chunk('113-foo.R')
+    knitr::read_chunk('example.R')
     {r test-a}
     {r test-b}
