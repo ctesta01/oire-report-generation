@@ -2,6 +2,8 @@
 library('rjson')
 library('memisc')
 library('gdata')
+library('RCurl')
+library('XML')
 
 # loading survey and response data
 survey = fromJSON(file='data/sample.qsf')
