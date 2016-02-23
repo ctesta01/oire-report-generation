@@ -26,3 +26,32 @@ The end result here is the number of responses to the question with not all NA r
     > Choice_Responses <- as.data.frame(table(factor(questions[[3]]$Responses[[1]], levels=questions[[3]]$Payload$ChoiceOrder)))[,2]
     > Percents <- Choice_Responses / N
     > q3 <- data.frame(Choice_Responses, Percents, Choices)
+    > kable(q3)
+
+    | Choice_Responses| Percents|Choices  |
+    |----------------:|--------:|:--------|
+    |                1|      0.2|Pizza    |
+    |                0|      0.0|Hot dogs |
+    |                3|      0.6|Candy    |
+    |                1|      0.2|Sushi    |
+
+
+    MC_get_choices <- function(x) {
+      return(sapply(x$Payload$Choices, function(x) x$Display))
+    }
+
+    MC_get_respondents_count <- function(x) {
+      return(length(x$Responses != -99))
+    }
+
+    MC_get_choice_responses <- function(x) {
+      return(as.data.frame(table(factor(x$Responses[[1]], levels=x$Payload$ChoiceOrder)))[,2])
+    }
+
+    MC_get_results <- function(x) {
+      N <- MC_get_choice_responses(x)
+      Percent <- percent(MC_get_choice_responses(x) / MC_get_respondents_count(x))
+      Answers <- MC_get_choices(x)
+      return(data.frame(N, Percent, Answers))
+    }
+    
