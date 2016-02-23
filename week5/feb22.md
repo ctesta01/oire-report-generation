@@ -32,5 +32,6 @@ To get the length of a vector not including NA responses, use `length(x[!is.na(x
 
 [Check that vector is not all NA](https://stackoverflow.com/questions/9417391/how-to-check-if-entire-vector-has-no-values-other-than-na-or-nan-in-r)
 We'll need this to check that a response is valid.
+    
     > all(is.na(as.data.frame(questions[[1]]$Responses)[5,]))
     [1] TRUE
