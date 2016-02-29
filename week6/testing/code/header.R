@@ -4,7 +4,7 @@ library('memisc')
 library('gdata')
 library('knitr')
 library('scales')
-library('stringr') 
+library('stringr')
 
 
 # loading survey and response data
