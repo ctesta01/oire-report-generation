@@ -31,6 +31,5 @@ questions <- Filter(Negate(function(x) is.null(unlist(x))), questions)
 
 # clearing out the variables we don't need anymore
 rm(delete_if_in_trash)
-rm(Blocks)
 rm(Trash)
 rm(TrashQuestions)
