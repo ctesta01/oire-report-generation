@@ -1,2 +1,4 @@
-\subsection*{\Sexpr{questions[[{{i}}]]$Payload$DataExportTag}}
-\Sexpr{questions[[{{i}}]]$Payload$QuestionText}
+\subsubsection*{\Sexpr{str_trim({{i}})}. \Sexpr{questions[[{{i}}]]$Payload$DataExportTag}
+\Sexpr{questions[[{{i}}]]$Payload$QuestionText}}
+\Sexpr{questions[[{{i}}]]$Kable}
+\hfill \break \hfill \break

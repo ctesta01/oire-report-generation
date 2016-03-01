@@ -79,3 +79,17 @@ mc_check_all_get_results <- function(x) {
   Answers <- get_question_choices(x)
   return(data.frame(N, Percent, Answers))
 }
+
+mc_ca_questions = which(sapply(questions, is_multiple_choice_check_all))
+for (i in mc_ca_questions) {
+  questions[[i]]$Table = mc_check_all_get_results(questions[[i]])
+  questions[[i]]$Kable = kable(questions[[i]]$Table, format = 'latex',
+  row.names = FALSE)
+}
+
+mc_sa_questions = which(sapply(questions, is_multiple_choice_single_answer))
+for (i in mc_sa_questions) {
+  questions[[i]]$Table = mc_single_answer_get_results(questions[[i]])
+  questions[[i]]$Kable = kable(questions[[i]]$Table, format = 'latex',
+  row.names = FALSE)
+}
