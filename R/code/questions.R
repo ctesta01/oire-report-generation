@@ -6,7 +6,11 @@ if(!exists("survey", mode="any")) source("header.R")
 # through the questions to clean the question text of any
 # html tags.
 cleanHTML <- function(htmlString) {
-  return(gsub("&nbsp;", " ", gsub("<.*?>", "", htmlString)))
+  return(
+    str_replace_all(
+    gsub("&nbsp;", " ",
+    gsub("<.*?>", "", htmlString)),
+    "[^[:alnum:].,?:;=-] ", ""))
 }
 
 # Building "questions"
