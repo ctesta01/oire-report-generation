@@ -33,3 +33,6 @@ questions <- Filter(Negate(function(x) is.null(unlist(x))), questions)
 rm(delete_if_in_trash)
 rm(Trash)
 rm(TrashQuestions)
+
+Blocks[[1]]$Payload[which(sapply(Blocks[[1]]$Payload, function(x) x$Type
+== "Trash"))] = NULL

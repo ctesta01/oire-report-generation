@@ -4,10 +4,15 @@
 
 <<run-all, include=FALSE>>=
 library(knitr)
-src = NULL
-for (i in 1:length(questions)) src = c(src, knit_expand('question_template.rnw'))
+blocks_latex = NULL
+for (i in 1:length(Blocks[[1]]$Payload)) {
+  blocks_latex = c(blocks_latex, knit_expand('block_template.rnw'))
+  for (j in 1:length(Blocks[[1]]$Payload[[i]]$BlockElements)) {
+    blocks_latex = c(blocks_latex, knit_expand('question_template.rnw'))
+  }
+}
 @
 
-\Sexpr{paste(knit(text = src), collapse = '\n')}
+\Sexpr{paste(knit(text = blocks_latex), collapse = '\n')}
 
 \end{document}

@@ -1,0 +1,13 @@
+\documentclass{article}
+\setlength\parindent{0pt}
+\begin{document}
+
+<<run-all, include=FALSE>>=
+library(knitr)
+blocks_latex = NULL
+for (i in 1:5) blocks_latex = c(blocks_latex, knit_expand('block_template.rnw'))
+@
+
+\Sexpr{paste(knit(text = blocks_latex), collapse = '\n')}
+
+\end{document}
