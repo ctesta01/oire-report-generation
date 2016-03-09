@@ -63,8 +63,7 @@ mc_single_answer_get_results <- function(x) {
   N <- mc_single_answer_get_choice_responses(x)
   Percent <- percent(mc_single_answer_get_choice_responses(x) /
     mc_single_answer_get_respondents_count(x))
-  Answers <- get_question_choices(x)
-  return(data.frame(N, Percent, Answers))
+  return(data.frame(N, Percent, get_question_choices(x)))
 }
 
 # mc_check_all_get_results creates the response table for a check all that
@@ -76,8 +75,7 @@ mc_check_all_get_results <- function(x) {
   N <- mc_check_all_get_choice_responses(x)
   Percent <- percent(mc_check_all_get_choice_responses(x) /
     mc_check_all_get_respondents_count(x))
-  Answers <- get_question_choices(x)
-  return(data.frame(N, Percent, Answers))
+  return(data.frame(N, Percent, get_question_choices(x)))
 }
 
 mc_ca_questions = which(sapply(questions, is_multiple_choice_check_all))
