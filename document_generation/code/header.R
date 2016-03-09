@@ -9,7 +9,9 @@ library('stringr')
 
 # loading survey and response data
 
+print("Select Qualtrics Survey File:")
 surveyfile = file.choose()
+print("Select CSV Response File:")
 responsesfile = file.choose()
 survey = fromJSON(file=surveyfile)
 responses = read.csv(responsesfile, skip=2, header=F)
