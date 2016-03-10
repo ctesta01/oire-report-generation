@@ -18,7 +18,8 @@ is_multiple_choice_single_answer <- function(x) {
   return(x$Payload$QuestionType == "MC" &&
          (x$Payload$Selector == "SAVR" ||
          x$Payload$Selector == "SAHR" ||
-         x$Payload$Selector == "SACOL")
+         x$Payload$Selector == "SACOL" ||
+         x$Payload$Selector == "DL")
          )
 }
 
@@ -30,7 +31,7 @@ get_question_choices <- function(x) {
 # mc_single_value_get_respondents_count checks how many responses are not
 # -99.
 mc_single_answer_get_respondents_count <- function(x) {
-  return(length(x$Responses != -99))
+  return(length(which(x$Responses != -99)))
 }
 
 # mc_check_all_get_respondents_count does not check whether or not
@@ -63,7 +64,9 @@ mc_single_answer_get_results <- function(x) {
   N <- mc_single_answer_get_choice_responses(x)
   Percent <- percent(mc_single_answer_get_choice_responses(x) /
     mc_single_answer_get_respondents_count(x))
-  return(data.frame(N, Percent, get_question_choices(x)))
+    df <- data.frame(N, Percent, get_question_choices(x))
+    colnames(df)[ncol(df)] <- ""
+  return(df)
 }
 
 # mc_check_all_get_results creates the response table for a check all that
@@ -75,7 +78,9 @@ mc_check_all_get_results <- function(x) {
   N <- mc_check_all_get_choice_responses(x)
   Percent <- percent(mc_check_all_get_choice_responses(x) /
     mc_check_all_get_respondents_count(x))
-  return(data.frame(N, Percent, get_question_choices(x)))
+    df <- data.frame(N, Percent, get_question_choices(x))
+    colnames(df)[ncol(df)] <- ""
+  return(df)
 }
 
 mc_ca_questions = which(sapply(questions, is_multiple_choice_check_all))

@@ -48,6 +48,16 @@
 \newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
 
 \usepackage{alltt}
+\setlength\topmargin{0pt}
+\addtolength\topmargin{-\headheight}
+\addtolength\topmargin{-\headsep}
+\setlength\oddsidemargin{0pt}
+\setlength\textwidth{\paperwidth}
+\addtolength\textwidth{-2in}
+\setlength\textheight{\paperheight}
+\addtolength\textheight{-2in}
+\usepackage{layout}
+
 \setlength\parindent{0pt}
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
 \begin{document}
@@ -55,166 +65,221 @@
 
 
 \subsection*{Matrix Questions}
-\subsubsection*{1. Q1}
-This is a bipolar matrix.
+\subsubsection*{1.
+This is a bipolar matrix.}
+
+
+\begin{tabular}{l|l|l|l|l}
+\hline
+ & 1 & 2 & 3 & \\
+\hline
+Left choice 1 & 33.3\% & 16.7\% & 33.3\% & Right choice 1\\
+\hline
+Left choice 2 & 16.7\% & 66.7\% & 0.0\% & Right choice 2\\
+\hline
+left choice 3 & 50.0\% & 33.3\% & 0.0\% & right choice 3\\
+\hline
+\end{tabular}
+
 
 \hfill \break \hfill \break
-\subsubsection*{2. Q2}
-This is a single answer likert matrix.
+\subsubsection*{2.
+This is a single answer likert matrix.}
+
 
 \begin{tabular}{l|l|l|l|l|l|l}
 \hline
  & Very Dissatisfied & Dissatisfied  & Neutral & Satisfied & Very Satisfied & N\\
 \hline
-Click to write Choice 1 & 16.67\% & 50.00\% & 16.67\% & 0.00\% & 0.00\% & 6\\
+Click to write Choice 1 & 16.7\% & 50.0\% & 16.7\% & 0.0\% & 0.0\% & 6\\
 \hline
-Click to write Choice 2 & 0.00\% & 66.67\% & 16.67\% & 0.00\% & 0.00\% & 6\\
+Click to write Choice 2 & 0.0\% & 66.7\% & 16.7\% & 0.0\% & 0.0\% & 6\\
 \hline
-Click to write Choice 3 & 0.00\% & 50.00\% & 16.67\% & 0.00\% & 0.00\% & 6\\
+Click to write Choice 3 & 0.0\% & 50.0\% & 16.7\% & 0.0\% & 0.0\% & 6\\
 \hline
 \end{tabular}
 
 
 \hfill \break \hfill \break
-\subsubsection*{3. Q3}
-This is a multiple answer likert matrix
+\subsubsection*{3.
+This is a multiple answer likert matrix}
+
 
 \hfill \break \hfill \break
-\subsubsection*{4. Q4}
-This is a drop down matrix
+\subsubsection*{4.
+This is a drop down matrix}
+
+
+\begin{tabular}{l|l|l|l|l}
+\hline
+ & Scale point 1 & Scale point 2 & Scale point 3 & N\\
+\hline
+Click to write Choice 1 & 33.3\% & 50.0\% & 0.0\% & 6\\
+\hline
+Click to write Choice 2 & 16.7\% & 50.0\% & 0.0\% & 6\\
+\hline
+Click to write Choice 3 & 16.7\% & 50.0\% & 0.0\% & 6\\
+\hline
+\end{tabular}
+
 
 \hfill \break \hfill \break
 \subsection*{Multiple Choice Questions}
-\subsubsection*{1. Q5}
-This is a single answer horizontal question
+\subsubsection*{1.
+This is a single answer horizontal question}
+If This is a single answer likert matrix.- Very Dissatisfied Is Selected 
 
 \begin{tabular}{r|l|l}
 \hline
-N & Percent & Answers\\
+N & Percent & \\
 \hline
-0 & 0.00\% & Click to write Choice 1\\
+0 & 0.0\% & Click to write Choice 1\\
 \hline
-2 & 33.33\% & Click to write Choice 2\\
+2 & 40.0\% & Click to write Choice 2\\
 \hline
-3 & 50.00\% & Click to write Choice 3\\
+3 & 60.0\% & Click to write Choice 3\\
 \hline
-0 & 0.00\% & Click to write Choice 4\\
+0 & 0.0\% & Click to write Choice 4\\
 \hline
-0 & 0.00\% & Click to write Choice 5\\
+0 & 0.0\% & Click to write Choice 5\\
 \hline
 \end{tabular}
 
 
 \hfill \break \hfill \break
-\subsubsection*{2. Q6}
-This is a single answer vertical question
+\subsubsection*{2.
+This is a single answer vertical question}
+
 
 \begin{tabular}{r|l|l}
 \hline
-N & Percent & Answers\\
+N & Percent & \\
 \hline
-2 & 33.33\% & Click to write Choice 1\\
+2 & 40.0\% & Click to write Choice 1\\
 \hline
-2 & 33.33\% & Click to write Choice 2\\
+2 & 40.0\% & Click to write Choice 2\\
 \hline
-1 & 16.67\% & Click to write Choice 3\\
+1 & 20.0\% & Click to write Choice 3\\
 \hline
 \end{tabular}
 
 
 \hfill \break \hfill \break
-\subsubsection*{3. Q7}
-This is a single answer column question
+\subsubsection*{3.
+This is a single answer column question}
+
 
 \begin{tabular}{r|l|l}
 \hline
-N & Percent & Answers\\
+N & Percent & \\
 \hline
-2 & 33.33\% & Click to write Choice 1\\
+2 & 40.0\% & Click to write Choice 1\\
 \hline
-3 & 50.00\% & Click to write Choice 2\\
+3 & 60.0\% & Click to write Choice 2\\
 \hline
-0 & 0.00\% & Click to write Choice 3\\
+0 & 0.0\% & Click to write Choice 3\\
 \hline
 \end{tabular}
 
 
 \hfill \break \hfill \break
-\subsubsection*{4. Q8}
-This is a drop down list
+\subsubsection*{4.
+This is a drop down list}
 
-\hfill \break \hfill \break
-\subsubsection*{5. Q9}
-This is a single selection box
-
-\hfill \break \hfill \break
-\subsubsection*{6. Q10}
-This is a multiple selection box
-
-\hfill \break \hfill \break
-\subsubsection*{7. Q11}
-This is a multiple answer (check allcolumn question.
 
 \begin{tabular}{r|l|l}
 \hline
-N & Percent & Answers\\
+N & Percent & \\
 \hline
-5 & 83.33\% & Click to write Choice 1\\
+0 & 0.0\% & Click to write Choice 1\\
 \hline
-2 & 33.33\% & Click to write Choice 2\\
+3 & 60.0\% & Click to write Choice 2\\
 \hline
-1 & 16.67\% & Click to write Choice 3\\
+2 & 40.0\% & Click to write Choice 3\\
 \hline
 \end{tabular}
 
 
 \hfill \break \hfill \break
-\subsubsection*{8. Q12}
-This is a multiple choice (check allhorizontal question
+\subsubsection*{5.
+This is a single selection box}
+
+
+\hfill \break \hfill \break
+\subsubsection*{6.
+This is a multiple selection box}
+
+
+\hfill \break \hfill \break
+\subsubsection*{7.
+This is a multiple answer (check allcolumn question.}
+
 
 \begin{tabular}{r|l|l}
 \hline
-N & Percent & Answers\\
+N & Percent & \\
 \hline
-3 & 50.00\% & Click to write Choice 1\\
+5 & 83.3\% & Click to write Choice 1\\
 \hline
-3 & 50.00\% & Click to write Choice 2\\
+2 & 33.3\% & Click to write Choice 2\\
 \hline
-0 & 0.00\% & Click to write Choice 3\\
+1 & 16.7\% & Click to write Choice 3\\
 \hline
 \end{tabular}
 
 
 \hfill \break \hfill \break
-\subsubsection*{9. Q13}
-This is a multiple choice (check allvertical question
+\subsubsection*{8.
+This is a multiple choice (check allhorizontal question}
+
 
 \begin{tabular}{r|l|l}
 \hline
-N & Percent & Answers\\
+N & Percent & \\
 \hline
-2 & 33.33\% & Click to write Choice 1\\
+3 & 50.0\% & Click to write Choice 1\\
 \hline
-3 & 50.00\% & Click to write Choice 2\\
+3 & 50.0\% & Click to write Choice 2\\
 \hline
-2 & 33.33\% & Click to write Choice 3\\
+0 & 0.0\% & Click to write Choice 3\\
+\hline
+\end{tabular}
+
+
+\hfill \break \hfill \break
+\subsubsection*{9.
+This is a multiple choice (check allvertical question}
+
+
+\begin{tabular}{r|l|l}
+\hline
+N & Percent & \\
+\hline
+2 & 33.3\% & Click to write Choice 1\\
+\hline
+3 & 50.0\% & Click to write Choice 2\\
+\hline
+2 & 33.3\% & Click to write Choice 3\\
 \hline
 \end{tabular}
 
 
 \hfill \break \hfill \break
 \subsection*{Rank Order Questions}
-\subsubsection*{1. Q14}
-This is a drag and drop rank order question
+\subsubsection*{1.
+This is a drag and drop rank order question}
+
 
 \hfill \break \hfill \break
-\subsubsection*{2. Q15}
-This is a radio button rank order question
+\subsubsection*{2.
+This is a radio button rank order question}
+
 
 \hfill \break \hfill \break
 \subsection*{Side by Side Question}
-\subsubsection*{1. Q16}
-This is a side by side question Column 1 has multiple answers Column 2 has single answers
+\subsubsection*{1.
+This is a side by side question Column 1 has multiple answers Column 2 has single answers}
+
 
 \hfill \break \hfill \break
 
