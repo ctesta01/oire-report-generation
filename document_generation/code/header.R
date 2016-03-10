@@ -19,6 +19,6 @@ names(responses) = names(responses2)
 rm(responses2)
 
 # some functions for later use
-percent <- function(x, digits = 2, format = "f", ...) {
+percent <- function(x, digits = 1, format = "f", ...) {
   paste0(formatC(100 * x, format = format, digits = digits, ...), "%")
 }
