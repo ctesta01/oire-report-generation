@@ -1,0 +1,11 @@
+\documentclass{article}
+\begin{document}
+<<kable>>=
+n <- 100
+x <- rnorm(n)
+y <- 2*x + rnorm(n)
+out <- lm(y ~ x)
+library(knitr)
+kable(summary(out)$coef, digits=2)
+@
+\end{document}

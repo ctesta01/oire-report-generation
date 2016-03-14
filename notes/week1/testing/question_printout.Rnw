@@ -1,0 +1,14 @@
+\documentclass{article}
+\begin{document}
+<<loading, include=FALSE>>=
+library('knitr')
+library('rjson')
+qsf <- fromJSON(file="sample_survey.json")
+@
+
+<<kable>>=
+cat("Hey what's up!")
+kable(as.data.frame(qsf$SurveyElements[[1]]$Payload))
+@
+
+\end{document}

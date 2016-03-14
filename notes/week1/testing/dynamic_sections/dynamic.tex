@@ -1,0 +1,328 @@
+\documentclass{article}\usepackage[]{graphicx}\usepackage[]{color}
+%% maxwidth is the original width if it is less than linewidth
+%% otherwise use linewidth (to make sure the graphics do not exceed the margin)
+\makeatletter
+\def\maxwidth{ %
+  \ifdim\Gin@nat@width>\linewidth
+    \linewidth
+  \else
+    \Gin@nat@width
+  \fi
+}
+\makeatother
+
+\definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}
+\newcommand{\hlnum}[1]{\textcolor[rgb]{0.686,0.059,0.569}{#1}}%
+\newcommand{\hlstr}[1]{\textcolor[rgb]{0.192,0.494,0.8}{#1}}%
+\newcommand{\hlcom}[1]{\textcolor[rgb]{0.678,0.584,0.686}{\textit{#1}}}%
+\newcommand{\hlopt}[1]{\textcolor[rgb]{0,0,0}{#1}}%
+\newcommand{\hlstd}[1]{\textcolor[rgb]{0.345,0.345,0.345}{#1}}%
+\newcommand{\hlkwa}[1]{\textcolor[rgb]{0.161,0.373,0.58}{\textbf{#1}}}%
+\newcommand{\hlkwb}[1]{\textcolor[rgb]{0.69,0.353,0.396}{#1}}%
+\newcommand{\hlkwc}[1]{\textcolor[rgb]{0.333,0.667,0.333}{#1}}%
+\newcommand{\hlkwd}[1]{\textcolor[rgb]{0.737,0.353,0.396}{\textbf{#1}}}%
+
+\usepackage{framed}
+\makeatletter
+\newenvironment{kframe}{%
+ \def\at@end@of@kframe{}%
+ \ifinner\ifhmode%
+  \def\at@end@of@kframe{\end{minipage}}%
+  \begin{minipage}{\columnwidth}%
+ \fi\fi%
+ \def\FrameCommand##1{\hskip\@totalleftmargin \hskip-\fboxsep
+ \colorbox{shadecolor}{##1}\hskip-\fboxsep
+     % There is no \\@totalrightmargin, so:
+     \hskip-\linewidth \hskip-\@totalleftmargin \hskip\columnwidth}%
+ \MakeFramed {\advance\hsize-\width
+   \@totalleftmargin\z@ \linewidth\hsize
+   \@setminipage}}%
+ {\par\unskip\endMakeFramed%
+ \at@end@of@kframe}
+\makeatother
+
+\definecolor{shadecolor}{rgb}{.97, .97, .97}
+\definecolor{messagecolor}{rgb}{0, 0, 0}
+\definecolor{warningcolor}{rgb}{1, 0, 1}
+\definecolor{errorcolor}{rgb}{1, 0, 0}
+\newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
+
+\usepackage{alltt}
+\title{Using knit\_expand() for templates}
+\author{Yihui Xie}
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\section{Write one row of data}
+Only the first two sections are evaluated.
+
+
+\subsection{Now i is 1}
+
+This chunk is evaluated.
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlcom{# row number 1}
+\hlstd{iris[}\hlnum{1}\hlstd{, ]}
+\end{alltt}
+\begin{verbatim}
+##   Sepal.Length Sepal.Width Petal.Length Petal.Width Species
+## 1          5.1         3.5          1.4         0.2  setosa
+\end{verbatim}
+\end{kframe}
+\end{knitrout}
+\subsection{Now i is 2}
+
+This chunk is evaluated.
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlcom{# row number 2}
+\hlstd{iris[}\hlnum{2}\hlstd{, ]}
+\end{alltt}
+\begin{verbatim}
+##   Sepal.Length Sepal.Width Petal.Length Petal.Width Species
+## 2          4.9           3          1.4         0.2  setosa
+\end{verbatim}
+\end{kframe}
+\end{knitrout}
+\subsection{Now i is 3}
+
+This chunk is not evaluated.
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlcom{# row number 3}
+\hlstd{iris[}\hlnum{3}\hlstd{, ]}
+\end{alltt}
+\end{kframe}
+\end{knitrout}
+\subsection{Now i is 4}
+
+This chunk is not evaluated.
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlcom{# row number 4}
+\hlstd{iris[}\hlnum{4}\hlstd{, ]}
+\end{alltt}
+\end{kframe}
+\end{knitrout}
+\subsection{Now i is 5}
+
+This chunk is not evaluated.
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlcom{# row number 5}
+\hlstd{iris[}\hlnum{5}\hlstd{, ]}
+\end{alltt}
+\end{kframe}
+\end{knitrout}
+
+\section{A regression model on several variables}
+
+You can expand a template file, or just provide the template as a character string.
+
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlcom{# the template}
+\hlstd{tpl} \hlkwb{=} \hlkwd{c}\hlstd{(}\hlstr{"\textbackslash{}\textbackslash{}subsection\{Regression on \{\{xvar\}\}\}"}\hlstd{,}
+        \hlstr{"<<lm-\{\{xvar\}\}>>="}\hlstd{,}
+        \hlstr{"lm(mpg~\{\{xvar\}\}, data=mtcars)"}\hlstd{,}
+        \hlstr{"@"}\hlstd{)}
+\hlcom{# expand to knitr source and pass to knit()}
+\hlstd{src} \hlkwb{=} \hlkwd{lapply}\hlstd{(}\hlkwd{names}\hlstd{(mtcars)[}\hlopt{-}\hlnum{1}\hlstd{],} \hlkwa{function}\hlstd{(}\hlkwc{xvar}\hlstd{) \{}\hlkwd{knit_expand}\hlstd{(}\hlkwc{text} \hlstd{= tpl)\})}
+\end{alltt}
+\end{kframe}
+\end{knitrout}
+
+\subsection{Regression on cyl}
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlkwd{lm}\hlstd{(mpg}\hlopt{~}\hlstd{cyl,} \hlkwc{data}\hlstd{=mtcars)}
+\end{alltt}
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = mpg ~ cyl, data = mtcars)
+## 
+## Coefficients:
+## (Intercept)          cyl  
+##      37.885       -2.876
+\end{verbatim}
+\end{kframe}
+\end{knitrout}
+\subsection{Regression on disp}
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlkwd{lm}\hlstd{(mpg}\hlopt{~}\hlstd{disp,} \hlkwc{data}\hlstd{=mtcars)}
+\end{alltt}
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = mpg ~ disp, data = mtcars)
+## 
+## Coefficients:
+## (Intercept)         disp  
+##    29.59985     -0.04122
+\end{verbatim}
+\end{kframe}
+\end{knitrout}
+\subsection{Regression on hp}
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlkwd{lm}\hlstd{(mpg}\hlopt{~}\hlstd{hp,} \hlkwc{data}\hlstd{=mtcars)}
+\end{alltt}
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = mpg ~ hp, data = mtcars)
+## 
+## Coefficients:
+## (Intercept)           hp  
+##    30.09886     -0.06823
+\end{verbatim}
+\end{kframe}
+\end{knitrout}
+\subsection{Regression on drat}
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlkwd{lm}\hlstd{(mpg}\hlopt{~}\hlstd{drat,} \hlkwc{data}\hlstd{=mtcars)}
+\end{alltt}
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = mpg ~ drat, data = mtcars)
+## 
+## Coefficients:
+## (Intercept)         drat  
+##      -7.525        7.678
+\end{verbatim}
+\end{kframe}
+\end{knitrout}
+\subsection{Regression on wt}
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlkwd{lm}\hlstd{(mpg}\hlopt{~}\hlstd{wt,} \hlkwc{data}\hlstd{=mtcars)}
+\end{alltt}
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = mpg ~ wt, data = mtcars)
+## 
+## Coefficients:
+## (Intercept)           wt  
+##      37.285       -5.344
+\end{verbatim}
+\end{kframe}
+\end{knitrout}
+\subsection{Regression on qsec}
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlkwd{lm}\hlstd{(mpg}\hlopt{~}\hlstd{qsec,} \hlkwc{data}\hlstd{=mtcars)}
+\end{alltt}
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = mpg ~ qsec, data = mtcars)
+## 
+## Coefficients:
+## (Intercept)         qsec  
+##      -5.114        1.412
+\end{verbatim}
+\end{kframe}
+\end{knitrout}
+\subsection{Regression on vs}
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlkwd{lm}\hlstd{(mpg}\hlopt{~}\hlstd{vs,} \hlkwc{data}\hlstd{=mtcars)}
+\end{alltt}
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = mpg ~ vs, data = mtcars)
+## 
+## Coefficients:
+## (Intercept)           vs  
+##       16.62         7.94
+\end{verbatim}
+\end{kframe}
+\end{knitrout}
+\subsection{Regression on am}
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlkwd{lm}\hlstd{(mpg}\hlopt{~}\hlstd{am,} \hlkwc{data}\hlstd{=mtcars)}
+\end{alltt}
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = mpg ~ am, data = mtcars)
+## 
+## Coefficients:
+## (Intercept)           am  
+##      17.147        7.245
+\end{verbatim}
+\end{kframe}
+\end{knitrout}
+\subsection{Regression on gear}
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlkwd{lm}\hlstd{(mpg}\hlopt{~}\hlstd{gear,} \hlkwc{data}\hlstd{=mtcars)}
+\end{alltt}
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = mpg ~ gear, data = mtcars)
+## 
+## Coefficients:
+## (Intercept)         gear  
+##       5.623        3.923
+\end{verbatim}
+\end{kframe}
+\end{knitrout}
+\subsection{Regression on carb}
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlkwd{lm}\hlstd{(mpg}\hlopt{~}\hlstd{carb,} \hlkwc{data}\hlstd{=mtcars)}
+\end{alltt}
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = mpg ~ carb, data = mtcars)
+## 
+## Coefficients:
+## (Intercept)         carb  
+##      25.872       -2.056
+\end{verbatim}
+\end{kframe}
+\end{knitrout}
+
+\section{Multiple variables}
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlstd{tpl} \hlkwb{=} \hlstr{'The value of a is \{\{a\}\} and b is \{\{b\}\}.'}
+\end{alltt}
+\end{kframe}
+\end{knitrout}
+
+The value of a is 1 and b is 2.
+
+The value of a is 5 and b is 2013.
+\end{document}

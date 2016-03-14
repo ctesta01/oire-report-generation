@@ -1,0 +1,18 @@
+\contentsline {section}{\numberline {1}Write one row of data}{1}
+\contentsline {subsection}{\numberline {1.1}Now i is 1}{1}
+\contentsline {subsection}{\numberline {1.2}Now i is 2}{2}
+\contentsline {subsection}{\numberline {1.3}Now i is 3}{2}
+\contentsline {subsection}{\numberline {1.4}Now i is 4}{2}
+\contentsline {subsection}{\numberline {1.5}Now i is 5}{2}
+\contentsline {section}{\numberline {2}A regression model on several variables}{2}
+\contentsline {subsection}{\numberline {2.1}Regression on cyl}{3}
+\contentsline {subsection}{\numberline {2.2}Regression on disp}{3}
+\contentsline {subsection}{\numberline {2.3}Regression on hp}{3}
+\contentsline {subsection}{\numberline {2.4}Regression on drat}{4}
+\contentsline {subsection}{\numberline {2.5}Regression on wt}{4}
+\contentsline {subsection}{\numberline {2.6}Regression on qsec}{4}
+\contentsline {subsection}{\numberline {2.7}Regression on vs}{5}
+\contentsline {subsection}{\numberline {2.8}Regression on am}{5}
+\contentsline {subsection}{\numberline {2.9}Regression on gear}{5}
+\contentsline {subsection}{\numberline {2.10}Regression on carb}{5}
+\contentsline {section}{\numberline {3}Multiple variables}{6}

@@ -1,0 +1,7 @@
+\documentclass{article}
+\begin{document}
+Some text
+<<RTest>>=
+2+2
+@
+\end{document}
