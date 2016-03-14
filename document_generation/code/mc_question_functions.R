@@ -38,7 +38,7 @@ mc_single_answer_get_respondents_count <- function(x) {
 # responses are valid or not, unlike mc_single_value_get_respondents_count
 # does.
 mc_check_all_get_respondents_count <- function(x) {
-  return(nrow(x$Responses))
+  return(length(which(x$Responses != -99)))
 }
 
 # mc_single_answer_get_choice_responses takes the list of variables from

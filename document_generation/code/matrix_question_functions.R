@@ -28,18 +28,18 @@ matrix_bipolar_questions <- which(sapply(questions,
 matrix_get_respondents_count <- function(x) {
   if (x$Payload$Selector == "Likert" &&
   x$Payload$SubSelector == "SingleAnswer"){
-    respondents_count <- sapply(x$Responses, function(y) strtoi(length(y != -99)))
+    respondents_count <- sapply(x$Responses, function(y) strtoi(length(which(y != -99))))
     return(respondents_count)
   } else if (x$Payload$Selector == "Likert" &&
   x$Payload$SubSelector == "MultipleAnswer"){
-    respondents_count <- sapply(x$Responses, length)
+    respondents_count <- sapply(x$Responses, function(y) strtoi(length(which(y != -99))))
     return(respondents_count)
   } else if (x$Payload$Selector == "Bipolar"){
-    respondents_count <- sapply(x$Responses, function(y) strtoi(length(y != -99)))
+    respondents_count <- sapply(x$Responses, function(y) strtoi(length(which(y != -99))))
     return(respondents_count)
   } else if (x$Payload$Selector == "Likert" &&
   x$Payload$SubSelector == "DL"){
-    respondents_count <- sapply(x$Responses, function(y) strtoi(length(y != -99)))
+    respondents_count <- sapply(x$Responses, function(y) strtoi(length(which(y != -99))))
     return(respondents_count)
   }
 }
