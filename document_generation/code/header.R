@@ -1,9 +1,7 @@
 # loading necessary libraries
 library('rjson')
-library('memisc')
 library('gdata')
 library('knitr')
-library('scales')
 library('stringr')
 
 
