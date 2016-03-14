@@ -1,9 +1,15 @@
 # loading necessary libraries
-library('rjson')
-library('gdata')
-library('knitr')
-library('stringr')
+if(!require(rjson)) { install.packages('rjson') }
+suppressMessages(library('rjson'))
 
+if(!require(gdata)) { install.packages('gdata') }
+suppressMessages(library('gdata'))
+
+if(!require(knitr)) { install.packages('knitr') }
+suppressMessages(library('knitr'))
+
+if(!require(stringr)) { install.packages('stringr') }
+suppressMessages(library('stringr'))
 
 # loading survey and response data
 print("Select Qualtrics Survey File:")
