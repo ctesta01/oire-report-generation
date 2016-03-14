@@ -1,15 +1,20 @@
 # loading necessary libraries
 if(!require(rjson)) { install.packages('rjson') }
-suppressMessages(library('rjson'))
-
 if(!require(gdata)) { install.packages('gdata') }
-suppressMessages(library('gdata'))
-
 if(!require(knitr)) { install.packages('knitr') }
-suppressMessages(library('knitr'))
-
 if(!require(stringr)) { install.packages('stringr') }
+suppressMessages(library('rjson'))
+suppressMessages(library('gdata'))
+suppressMessages(library('knitr'))
 suppressMessages(library('stringr'))
+
+if(.Platform$OS.type == "windows") {
+  if(!require(installr)) {
+    install.packages("installr");
+    require(installr)
+  }
+  install.pandoc()
+}
 
 # loading survey and response data
 print("Select Qualtrics Survey File:")
