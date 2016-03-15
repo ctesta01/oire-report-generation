@@ -23,22 +23,22 @@
 <tbody>
 <tr class="odd">
 <td align="left">Left choice 1</td>
-<td align="left">33.3%</td>
-<td align="left">16.7%</td>
-<td align="left">33.3%</td>
+<td align="left">40.0%</td>
+<td align="left">20.0%</td>
+<td align="left">40.0%</td>
 <td align="left">Right choice 1</td>
 </tr>
 <tr class="even">
 <td align="left">Left choice 2</td>
-<td align="left">16.7%</td>
-<td align="left">66.7%</td>
+<td align="left">20.0%</td>
+<td align="left">80.0%</td>
 <td align="left">0.0%</td>
 <td align="left">Right choice 2</td>
 </tr>
 <tr class="odd">
 <td align="left">left choice 3</td>
-<td align="left">50.0%</td>
-<td align="left">33.3%</td>
+<td align="left">60.0%</td>
+<td align="left">40.0%</td>
 <td align="left">0.0%</td>
 <td align="left">right choice 3</td>
 </tr>
@@ -60,30 +60,30 @@
 <tbody>
 <tr class="odd">
 <td align="left">Click to write Choice 1</td>
-<td align="left">16.7%</td>
-<td align="left">50.0%</td>
-<td align="left">16.7%</td>
+<td align="left">20.0%</td>
+<td align="left">60.0%</td>
+<td align="left">20.0%</td>
 <td align="left">0.0%</td>
 <td align="left">0.0%</td>
-<td align="left">6</td>
+<td align="left">5</td>
 </tr>
 <tr class="even">
 <td align="left">Click to write Choice 2</td>
 <td align="left">0.0%</td>
-<td align="left">66.7%</td>
-<td align="left">16.7%</td>
+<td align="left">80.0%</td>
+<td align="left">20.0%</td>
 <td align="left">0.0%</td>
 <td align="left">0.0%</td>
-<td align="left">6</td>
+<td align="left">5</td>
 </tr>
 <tr class="odd">
 <td align="left">Click to write Choice 3</td>
 <td align="left">0.0%</td>
-<td align="left">50.0%</td>
-<td align="left">16.7%</td>
+<td align="left">75.0%</td>
+<td align="left">25.0%</td>
 <td align="left">0.0%</td>
 <td align="left">0.0%</td>
-<td align="left">6</td>
+<td align="left">4</td>
 </tr>
 </tbody>
 </table>
@@ -102,24 +102,24 @@
 <tbody>
 <tr class="odd">
 <td align="left">Click to write Choice 1</td>
-<td align="left">33.3%</td>
-<td align="left">50.0%</td>
+<td align="left">40.0%</td>
+<td align="left">60.0%</td>
 <td align="left">0.0%</td>
-<td align="left">6</td>
+<td align="left">5</td>
 </tr>
 <tr class="even">
 <td align="left">Click to write Choice 2</td>
-<td align="left">16.7%</td>
-<td align="left">50.0%</td>
+<td align="left">25.0%</td>
+<td align="left">75.0%</td>
 <td align="left">0.0%</td>
-<td align="left">6</td>
+<td align="left">4</td>
 </tr>
 <tr class="odd">
 <td align="left">Click to write Choice 3</td>
-<td align="left">16.7%</td>
-<td align="left">50.0%</td>
+<td align="left">25.0%</td>
+<td align="left">75.0%</td>
 <td align="left">0.0%</td>
-<td align="left">6</td>
+<td align="left">4</td>
 </tr>
 </tbody>
 </table>
@@ -256,17 +256,17 @@
 <tbody>
 <tr class="odd">
 <td align="right">5</td>
-<td align="left">83.3%</td>
+<td align="left">33.3%</td>
 <td align="left">Click to write Choice 1</td>
 </tr>
 <tr class="even">
 <td align="right">2</td>
-<td align="left">33.3%</td>
+<td align="left">13.3%</td>
 <td align="left">Click to write Choice 2</td>
 </tr>
 <tr class="odd">
 <td align="right">1</td>
-<td align="left">16.7%</td>
+<td align="left">6.7%</td>
 <td align="left">Click to write Choice 3</td>
 </tr>
 </tbody>
@@ -283,12 +283,12 @@
 <tbody>
 <tr class="odd">
 <td align="right">3</td>
-<td align="left">50.0%</td>
+<td align="left">20.0%</td>
 <td align="left">Click to write Choice 1</td>
 </tr>
 <tr class="even">
 <td align="right">3</td>
-<td align="left">50.0%</td>
+<td align="left">20.0%</td>
 <td align="left">Click to write Choice 2</td>
 </tr>
 <tr class="odd">
@@ -310,17 +310,17 @@
 <tbody>
 <tr class="odd">
 <td align="right">2</td>
-<td align="left">33.3%</td>
+<td align="left">13.3%</td>
 <td align="left">Click to write Choice 1</td>
 </tr>
 <tr class="even">
 <td align="right">3</td>
-<td align="left">50.0%</td>
+<td align="left">20.0%</td>
 <td align="left">Click to write Choice 2</td>
 </tr>
 <tr class="odd">
 <td align="right">2</td>
-<td align="left">33.3%</td>
+<td align="left">13.3%</td>
 <td align="left">Click to write Choice 3</td>
 </tr>
 </tbody>
