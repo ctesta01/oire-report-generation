@@ -19,7 +19,8 @@ is_multiple_choice_single_answer <- function(x) {
          (x$Payload$Selector == "SAVR" ||
          x$Payload$Selector == "SAHR" ||
          x$Payload$Selector == "SACOL" ||
-         x$Payload$Selector == "DL")
+         x$Payload$Selector == "DL" ||
+         x$Payload$Selector == "SB")
          )
 }
 
