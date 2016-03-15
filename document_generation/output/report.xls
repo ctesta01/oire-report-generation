@@ -88,6 +88,40 @@
 </tbody>
 </table>
 <h3 id="this-is-a-multiple-answer-likert-matrix" class="unnumbered">3. This is a multiple answer likert matrix</h3>
+<table>
+<thead>
+<tr class="header">
+<th align="left"></th>
+<th align="left">Click to write Scale point 1</th>
+<th align="left">Click to write Scale point 2</th>
+<th align="left">Click to write Scale point 3</th>
+<th align="left">N</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Click to write Choice 1</td>
+<td align="left">60.0%</td>
+<td align="left">60.0%</td>
+<td align="left">0.0%</td>
+<td align="left">5</td>
+</tr>
+<tr class="even">
+<td align="left">Click to write Choice 2</td>
+<td align="left">40.0%</td>
+<td align="left">60.0%</td>
+<td align="left">0.0%</td>
+<td align="left">5</td>
+</tr>
+<tr class="odd">
+<td align="left">Click to write Choice 3</td>
+<td align="left">0.0%</td>
+<td align="left">40.0%</td>
+<td align="left">20.0%</td>
+<td align="left">3</td>
+</tr>
+</tbody>
+</table>
 <h3 id="this-is-a-drop-down-matrix" class="unnumbered">4. This is a drop down matrix</h3>
 <table>
 <thead>
