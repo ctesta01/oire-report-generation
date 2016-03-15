@@ -1,4 +1,4 @@
-\subsubsection*{\Sexpr{str_trim({{j}})}.
+\subsubsection*{\Sexpr{str_trim({{k}})}.
 \Sexpr{Blocks[[1]]$Payload[[{{i}}]]$BlockElements[[{{j}}]]$Question[[1]]$Payload$QuestionText}}
 \Sexpr{Blocks[[1]]$Payload[[{{i}}]]$BlockElements[[{{j}}]]$Question[[1]]$Kable}
 \hfill \break \hfill \break

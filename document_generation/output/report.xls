@@ -124,7 +124,7 @@
 </tbody>
 </table>
 <h2 id="multiple-choice-questions" class="unnumbered">Multiple Choice Questions</h2>
-<h3 id="this-is-a-single-answer-horizontal-question" class="unnumbered">1. This is a single answer horizontal question</h3>
+<h3 id="this-is-a-single-answer-horizontal-question" class="unnumbered">5. This is a single answer horizontal question</h3>
 <table>
 <thead>
 <tr class="header">
@@ -161,7 +161,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="this-is-a-single-answer-vertical-question" class="unnumbered">2. This is a single answer vertical question</h3>
+<h3 id="this-is-a-single-answer-vertical-question" class="unnumbered">6. This is a single answer vertical question</h3>
 <table>
 <thead>
 <tr class="header">
@@ -188,7 +188,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="this-is-a-single-answer-column-question" class="unnumbered">3. This is a single answer column question</h3>
+<h3 id="this-is-a-single-answer-column-question" class="unnumbered">7. This is a single answer column question</h3>
 <table>
 <thead>
 <tr class="header">
@@ -215,7 +215,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="this-is-a-drop-down-list" class="unnumbered">4. This is a drop down list</h3>
+<h3 id="this-is-a-drop-down-list" class="unnumbered">8. This is a drop down list</h3>
 <table>
 <thead>
 <tr class="header">
@@ -242,9 +242,9 @@
 </tr>
 </tbody>
 </table>
-<h3 id="this-is-a-single-selection-box" class="unnumbered">5. This is a single selection box</h3>
-<h3 id="this-is-a-multiple-selection-box" class="unnumbered">6. This is a multiple selection box</h3>
-<h3 id="this-is-a-multiple-answer-check-allcolumn-question." class="unnumbered">7. This is a multiple answer (check allcolumn question.</h3>
+<h3 id="this-is-a-single-selection-box" class="unnumbered">9. This is a single selection box</h3>
+<h3 id="this-is-a-multiple-selection-box" class="unnumbered">10. This is a multiple selection box</h3>
+<h3 id="this-is-a-multiple-answer-check-allcolumn-question." class="unnumbered">11. This is a multiple answer (check allcolumn question.</h3>
 <table>
 <thead>
 <tr class="header">
@@ -271,7 +271,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="this-is-a-multiple-choice-check-allhorizontal-question" class="unnumbered">8. This is a multiple choice (check allhorizontal question</h3>
+<h3 id="this-is-a-multiple-choice-check-allhorizontal-question" class="unnumbered">12. This is a multiple choice (check allhorizontal question</h3>
 <table>
 <thead>
 <tr class="header">
@@ -298,7 +298,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="this-is-a-multiple-choice-check-allvertical-question" class="unnumbered">9. This is a multiple choice (check allvertical question</h3>
+<h3 id="this-is-a-multiple-choice-check-allvertical-question" class="unnumbered">13. This is a multiple choice (check allvertical question</h3>
 <table>
 <thead>
 <tr class="header">
@@ -326,9 +326,9 @@
 </tbody>
 </table>
 <h2 id="rank-order-questions" class="unnumbered">Rank Order Questions</h2>
-<h3 id="this-is-a-drag-and-drop-rank-order-question" class="unnumbered">1. This is a drag and drop rank order question</h3>
-<h3 id="this-is-a-radio-button-rank-order-question" class="unnumbered">2. This is a radio button rank order question</h3>
+<h3 id="this-is-a-drag-and-drop-rank-order-question" class="unnumbered">14. This is a drag and drop rank order question</h3>
+<h3 id="this-is-a-radio-button-rank-order-question" class="unnumbered">15. This is a radio button rank order question</h3>
 <h2 id="side-by-side-question" class="unnumbered">Side by Side Question</h2>
-<h3 id="this-is-a-side-by-side-question-column-1-has-multiple-answers-column-2-has-single-answers" class="unnumbered">1. This is a side by side question Column 1 has multiple answers Column 2 has single answers</h3>
+<h3 id="this-is-a-side-by-side-question-column-1-has-multiple-answers-column-2-has-single-answers" class="unnumbered">16. This is a side by side question Column 1 has multiple answers Column 2 has single answers</h3>
 </body>
 </html>

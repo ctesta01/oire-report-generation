@@ -15,10 +15,12 @@
 <<run-all, include=FALSE>>=
 library(knitr)
 blocks_latex = NULL
+k = 1
 for (i in 1:length(Blocks[[1]]$Payload)) {
   blocks_latex = c(blocks_latex, knit_expand('block_template.rnw'))
   for (j in 1:length(Blocks[[1]]$Payload[[i]]$BlockElements)) {
     blocks_latex = c(blocks_latex, knit_expand('question_template.rnw'))
+    k = k+1
   }
 }
 @
