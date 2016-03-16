@@ -277,6 +277,32 @@
 </tbody>
 </table>
 <h3 id="this-is-a-single-selection-box" class="unnumbered">9. This is a single selection box</h3>
+<table>
+<thead>
+<tr class="header">
+<th align="right">N</th>
+<th align="left">Percent</th>
+<th align="left"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">3</td>
+<td align="left">60.0%</td>
+<td align="left">Click to write Choice 1</td>
+</tr>
+<tr class="even">
+<td align="right">1</td>
+<td align="left">20.0%</td>
+<td align="left">Click to write Choice 2</td>
+</tr>
+<tr class="odd">
+<td align="right">1</td>
+<td align="left">20.0%</td>
+<td align="left">Click to write Choice 3</td>
+</tr>
+</tbody>
+</table>
 <h3 id="this-is-a-multiple-selection-box" class="unnumbered">10. This is a multiple selection box</h3>
 <h3 id="this-is-a-multiple-answer-check-allcolumn-question." class="unnumbered">11. This is a multiple answer (check allcolumn question.</h3>
 <table>
