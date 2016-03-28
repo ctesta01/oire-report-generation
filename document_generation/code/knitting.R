@@ -1,5 +1,0 @@
-knit('report.rnw', output = 'output/report.tex')
-setwd('./output')
-tools::texi2pdf('report.tex', clean = TRUE)
-system("pandoc -s report.tex -o report.xls")
-setwd('..')

@@ -117,16 +117,10 @@ matrix_multiple_answer_get_results <- function(x) {
 # table and kable code.
 for (i in matrix_single_answer_questions) {
   questions[[i]]$Table = matrix_single_answer_get_results(questions[[i]])
-  questions[[i]]$Kable = kable(questions[[i]]$Table, format='latex',
-  row.names = FALSE)
 }
 for (i in matrix_bipolar_questions) {
   questions[[i]]$Table = matrix_bipolar_get_results(questions[[i]])
-  questions[[i]]$Kable = kable(questions[[i]]$Table, format='latex',
-  row.names = FALSE)
 }
 for (i in matrix_multiple_answer_questions) {
   questions[[i]]$Table = matrix_multiple_answer_get_results(questions[[i]])
-  questions[[i]]$Kable = kable(questions[[i]]$Table, format='latex',
-  row.names = FALSE)
 }
