@@ -67,7 +67,8 @@ matrix_single_answer_get_results <- function(x) {
     }
   }
   array <- cbind(array, N=matrix_get_respondents_count(x))
-  array <- cbind(sapply(x$Payload$Choices, function(y) y$Display), array)
+  array <- cbind(Choices=sapply(x$Payload$Choices, function(y) y$Display), array)
+  array <- as.data.frame(array)
   return(array)
 }
 
@@ -87,8 +88,9 @@ matrix_bipolar_get_results <- function(x) {
   array <- cbind(array, right_choices)
 
   # set the column headers for the first and last column to empty
-  colnames(array)[ncol(array)] <- ""
-  colnames(array)[1] <- ""
+  # colnames(array)[ncol(array)] <- ""
+  # colnames(array)[1] <- ""
+  array <- as.data.frame(array)
   return(array)
 }
 
@@ -109,7 +111,7 @@ matrix_multiple_answer_get_results <- function(x) {
       }
     }
     df <- cbind(df, N=respondents_count)
-    df <- cbind(sapply(x$Payload$Choices, function(y) y$Display), df)
+    df <- cbind(Choices=sapply(x$Payload$Choices, function(y) y$Display), df)
     return(df)
   }
 
