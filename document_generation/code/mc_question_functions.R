@@ -6,7 +6,8 @@ is_multiple_choice_check_all <- function(x) {
   return(x$Payload$QuestionType == "MC" &&
   (x$Payload$Selector == "MAVR" ||
   x$Payload$Selector == "MAHR" ||
-  x$Payload$Selector == "MACOL")
+  x$Payload$Selector == "MACOL" ||
+  x$Payload$Selector == "MSB")
   )
 }
 

@@ -301,7 +301,38 @@
 </tr>
 </tbody>
 </table>
-<p>Q10 Q11</p>
+<p>Q10</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left"></th>
+<th align="right">N</th>
+<th align="left">Percent</th>
+<th align="left"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Q10_1</td>
+<td align="right">NA</td>
+<td align="left">NA%</td>
+<td align="left">Click to write Choice 1</td>
+</tr>
+<tr class="even">
+<td align="left">Q10_2</td>
+<td align="right">NA</td>
+<td align="left">NA%</td>
+<td align="left">Click to write Choice 2</td>
+</tr>
+<tr class="odd">
+<td align="left">Q10_3</td>
+<td align="right">NA</td>
+<td align="left">NA%</td>
+<td align="left">Click to write Choice 3</td>
+</tr>
+</tbody>
+</table>
+<p>Q11</p>
 <table>
 <thead>
 <tr class="header">
