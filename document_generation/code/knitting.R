@@ -1,4 +1,5 @@
 knit('tables.rnw', output = 'output/tables.tex')
 setwd('./output')
 system("pandoc -s tables.tex -o tables.xls")
+file.remove("tables.tex")
 setwd('..')
