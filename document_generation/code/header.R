@@ -31,3 +31,12 @@ rm(responses2)
 percent <- function(x, digits = 1, format = "f", ...) {
   paste0(formatC(100 * x, format = format, digits = digits, ...), "%")
 }
+
+
+# list_of_rows_to_df function for later use
+list_of_rows_to_df <- function(data) {
+  nCol <- max(vapply(data, length, 0))
+  data <- lapply(data, function(row) c(row, rep(NA, nCol-length(row))))
+  data <- matrix(unlist(data), nrow=length(data), ncol=nCol, byrow=TRUE)
+  data.frame(data)
+}
