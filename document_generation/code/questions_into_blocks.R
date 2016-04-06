@@ -4,7 +4,7 @@ for (i in 1:length(Blocks[[1]]$Payload)) {
       Blocks[[1]]$Payload[[i]]$BlockElements[[j]] =
       questions[which(sapply(questions, function(x)
       x$Payload$QuestionID ==
-      Blocks[[1]]$Payload[[i]]$BlockElements[[j]]$QuestionID))]
+      Blocks[[1]]$Payload[[i]]$BlockElements[[j]]$QuestionID))][[1]]
     }
   }
 }
