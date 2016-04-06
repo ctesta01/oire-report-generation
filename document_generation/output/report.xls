@@ -8,25 +8,392 @@
   <style type="text/css">code{white-space: pre;}</style>
 </head>
 <body>
-<h2 id="matrix-questions" class="unnumbered">Matrix Questions</h2>
-<h3 id="section" class="unnumbered">1. </h3>
-<h3 id="section-1" class="unnumbered">2. </h3>
-<h3 id="section-2" class="unnumbered">3. </h3>
-<h3 id="section-3" class="unnumbered">4. </h3>
-<h2 id="multiple-choice-questions" class="unnumbered">Multiple Choice Questions</h2>
-<h3 id="section-4" class="unnumbered">5. </h3>
-<h3 id="section-5" class="unnumbered">6. </h3>
-<h3 id="section-6" class="unnumbered">7. </h3>
-<h3 id="section-7" class="unnumbered">8. </h3>
-<h3 id="section-8" class="unnumbered">9. </h3>
-<h3 id="section-9" class="unnumbered">10. </h3>
-<h3 id="section-10" class="unnumbered">11. </h3>
-<h3 id="section-11" class="unnumbered">12. </h3>
-<h3 id="section-12" class="unnumbered">13. </h3>
-<h2 id="rank-order-questions" class="unnumbered">Rank Order Questions</h2>
-<h3 id="section-13" class="unnumbered">14. </h3>
-<h3 id="section-14" class="unnumbered">15. </h3>
-<h2 id="side-by-side-question" class="unnumbered">Side by Side Question</h2>
-<h3 id="section-15" class="unnumbered">16. </h3>
+<p>Q1</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">left_choices</th>
+<th align="left">1</th>
+<th align="left">2</th>
+<th align="left">3</th>
+<th align="left">right_choices</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Left choice 1</td>
+<td align="left">40.0%</td>
+<td align="left">20.0%</td>
+<td align="left">40.0%</td>
+<td align="left">Right choice 1</td>
+</tr>
+<tr class="even">
+<td align="left">Left choice 2</td>
+<td align="left">20.0%</td>
+<td align="left">80.0%</td>
+<td align="left">0.0%</td>
+<td align="left">Right choice 2</td>
+</tr>
+<tr class="odd">
+<td align="left">left choice 3</td>
+<td align="left">60.0%</td>
+<td align="left">40.0%</td>
+<td align="left">0.0%</td>
+<td align="left">right choice 3</td>
+</tr>
+</tbody>
+</table>
+<p>Q2</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Choices</th>
+<th align="left">Very Dissatisfied</th>
+<th align="left">Dissatisfied</th>
+<th align="left">Neutral</th>
+<th align="left">Satisfied</th>
+<th align="left">Very Satisfied</th>
+<th align="left">N</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Click to write Choice 1</td>
+<td align="left">20.0%</td>
+<td align="left">60.0%</td>
+<td align="left">20.0%</td>
+<td align="left">0.0%</td>
+<td align="left">0.0%</td>
+<td align="left">5</td>
+</tr>
+<tr class="even">
+<td align="left">Click to write Choice 2</td>
+<td align="left">0.0%</td>
+<td align="left">80.0%</td>
+<td align="left">20.0%</td>
+<td align="left">0.0%</td>
+<td align="left">0.0%</td>
+<td align="left">5</td>
+</tr>
+<tr class="odd">
+<td align="left">Click to write Choice 3</td>
+<td align="left">0.0%</td>
+<td align="left">75.0%</td>
+<td align="left">25.0%</td>
+<td align="left">0.0%</td>
+<td align="left">0.0%</td>
+<td align="left">4</td>
+</tr>
+</tbody>
+</table>
+<p>Q3</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Choices</th>
+<th align="left">Click to write Scale point 1</th>
+<th align="left">Click to write Scale point 2</th>
+<th align="left">Click to write Scale point 3</th>
+<th align="left">N</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Click to write Choice 1</td>
+<td align="left">60.0%</td>
+<td align="left">60.0%</td>
+<td align="left">0.0%</td>
+<td align="left">5</td>
+</tr>
+<tr class="even">
+<td align="left">Click to write Choice 2</td>
+<td align="left">40.0%</td>
+<td align="left">60.0%</td>
+<td align="left">0.0%</td>
+<td align="left">5</td>
+</tr>
+<tr class="odd">
+<td align="left">Click to write Choice 3</td>
+<td align="left">0.0%</td>
+<td align="left">40.0%</td>
+<td align="left">20.0%</td>
+<td align="left">3</td>
+</tr>
+</tbody>
+</table>
+<p>Q4</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Choices</th>
+<th align="left">Scale point 1</th>
+<th align="left">Scale point 2</th>
+<th align="left">Scale point 3</th>
+<th align="left">N</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Click to write Choice 1</td>
+<td align="left">40.0%</td>
+<td align="left">60.0%</td>
+<td align="left">0.0%</td>
+<td align="left">5</td>
+</tr>
+<tr class="even">
+<td align="left">Click to write Choice 2</td>
+<td align="left">25.0%</td>
+<td align="left">75.0%</td>
+<td align="left">0.0%</td>
+<td align="left">4</td>
+</tr>
+<tr class="odd">
+<td align="left">Click to write Choice 3</td>
+<td align="left">25.0%</td>
+<td align="left">75.0%</td>
+<td align="left">0.0%</td>
+<td align="left">4</td>
+</tr>
+</tbody>
+</table>
+<p>Q5</p>
+<table>
+<thead>
+<tr class="header">
+<th align="right">N</th>
+<th align="left">Percent</th>
+<th align="left"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">0</td>
+<td align="left">0.0%</td>
+<td align="left">Click to write Choice 1</td>
+</tr>
+<tr class="even">
+<td align="right">2</td>
+<td align="left">40.0%</td>
+<td align="left">Click to write Choice 2</td>
+</tr>
+<tr class="odd">
+<td align="right">3</td>
+<td align="left">60.0%</td>
+<td align="left">Click to write Choice 3</td>
+</tr>
+<tr class="even">
+<td align="right">0</td>
+<td align="left">0.0%</td>
+<td align="left">Click to write Choice 4</td>
+</tr>
+<tr class="odd">
+<td align="right">0</td>
+<td align="left">0.0%</td>
+<td align="left">Click to write Choice 5</td>
+</tr>
+</tbody>
+</table>
+<p>Q6</p>
+<table>
+<thead>
+<tr class="header">
+<th align="right">N</th>
+<th align="left">Percent</th>
+<th align="left"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">2</td>
+<td align="left">40.0%</td>
+<td align="left">Click to write Choice 1</td>
+</tr>
+<tr class="even">
+<td align="right">2</td>
+<td align="left">40.0%</td>
+<td align="left">Click to write Choice 2</td>
+</tr>
+<tr class="odd">
+<td align="right">1</td>
+<td align="left">20.0%</td>
+<td align="left">Click to write Choice 3</td>
+</tr>
+</tbody>
+</table>
+<p>Q7</p>
+<table>
+<thead>
+<tr class="header">
+<th align="right">N</th>
+<th align="left">Percent</th>
+<th align="left"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">2</td>
+<td align="left">40.0%</td>
+<td align="left">Click to write Choice 1</td>
+</tr>
+<tr class="even">
+<td align="right">3</td>
+<td align="left">60.0%</td>
+<td align="left">Click to write Choice 2</td>
+</tr>
+<tr class="odd">
+<td align="right">0</td>
+<td align="left">0.0%</td>
+<td align="left">Click to write Choice 3</td>
+</tr>
+</tbody>
+</table>
+<p>Q8</p>
+<table>
+<thead>
+<tr class="header">
+<th align="right">N</th>
+<th align="left">Percent</th>
+<th align="left"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">0</td>
+<td align="left">0.0%</td>
+<td align="left">Click to write Choice 1</td>
+</tr>
+<tr class="even">
+<td align="right">3</td>
+<td align="left">60.0%</td>
+<td align="left">Click to write Choice 2</td>
+</tr>
+<tr class="odd">
+<td align="right">2</td>
+<td align="left">40.0%</td>
+<td align="left">Click to write Choice 3</td>
+</tr>
+</tbody>
+</table>
+<p>Q9</p>
+<table>
+<thead>
+<tr class="header">
+<th align="right">N</th>
+<th align="left">Percent</th>
+<th align="left"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">3</td>
+<td align="left">60.0%</td>
+<td align="left">Click to write Choice 1</td>
+</tr>
+<tr class="even">
+<td align="right">1</td>
+<td align="left">20.0%</td>
+<td align="left">Click to write Choice 2</td>
+</tr>
+<tr class="odd">
+<td align="right">1</td>
+<td align="left">20.0%</td>
+<td align="left">Click to write Choice 3</td>
+</tr>
+</tbody>
+</table>
+<p>Q10 Q11</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left"></th>
+<th align="right">N</th>
+<th align="left">Percent</th>
+<th align="left"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Q11_1</td>
+<td align="right">5</td>
+<td align="left">33.3%</td>
+<td align="left">Click to write Choice 1</td>
+</tr>
+<tr class="even">
+<td align="left">Q11_2</td>
+<td align="right">2</td>
+<td align="left">13.3%</td>
+<td align="left">Click to write Choice 2</td>
+</tr>
+<tr class="odd">
+<td align="left">Q11_3</td>
+<td align="right">1</td>
+<td align="left">6.7%</td>
+<td align="left">Click to write Choice 3</td>
+</tr>
+</tbody>
+</table>
+<p>Q12</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left"></th>
+<th align="right">N</th>
+<th align="left">Percent</th>
+<th align="left"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Q12_1</td>
+<td align="right">3</td>
+<td align="left">20.0%</td>
+<td align="left">Click to write Choice 1</td>
+</tr>
+<tr class="even">
+<td align="left">Q12_2</td>
+<td align="right">3</td>
+<td align="left">20.0%</td>
+<td align="left">Click to write Choice 2</td>
+</tr>
+<tr class="odd">
+<td align="left">Q12_3</td>
+<td align="right">0</td>
+<td align="left">0.0%</td>
+<td align="left">Click to write Choice 3</td>
+</tr>
+</tbody>
+</table>
+<p>Q13</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left"></th>
+<th align="right">N</th>
+<th align="left">Percent</th>
+<th align="left"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Q13_1</td>
+<td align="right">2</td>
+<td align="left">13.3%</td>
+<td align="left">Click to write Choice 1</td>
+</tr>
+<tr class="even">
+<td align="left">Q13_2</td>
+<td align="right">3</td>
+<td align="left">20.0%</td>
+<td align="left">Click to write Choice 2</td>
+</tr>
+<tr class="odd">
+<td align="left">Q13_3</td>
+<td align="right">2</td>
+<td align="left">13.3%</td>
+<td align="left">Click to write Choice 3</td>
+</tr>
+</tbody>
+</table>
+<p>Q14 Q15 Q16</p>
 </body>
 </html>

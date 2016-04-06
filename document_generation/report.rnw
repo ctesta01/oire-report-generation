@@ -14,17 +14,20 @@
 
 <<run-all, include=FALSE>>=
 library(knitr)
-blocks_latex = NULL
+print_tables = NULL
 k = 1
-for (i in 1:length(Blocks[[1]]$Payload)) {
-  blocks_latex = c(blocks_latex, knit_expand('block_template.rnw'))
-  for (j in 1:length(Blocks[[1]]$Payload[[i]]$BlockElements)) {
-    blocks_latex = c(blocks_latex, knit_expand('question_template.rnw'))
-    k = k+1
+for (i in 1:length(Blocks)) {
+  if (length(Blocks[[i]]$BlockElements) != 0) {
+    for (j in 1:length(Blocks[[i]]$BlockElements)) {
+      print_tables = c(print_tables, Blocks[[i]]$BlockElements[[j]]$Payload$DataExportTag)
+      if (is.null(Blocks[[i]]$BlockElements[[j]]$Table) == FALSE) {
+      print_tables = c(print_tables, kable(Blocks[[i]]$BlockElements[[j]]$Table, format="latex"))
+    }
+    }
   }
 }
 @
 
-\Sexpr{paste(knit(text = blocks_latex), collapse = '\n')}
+\Sexpr{paste(knit(text = print_tables), collapse = '\n')}
 
 \end{document}

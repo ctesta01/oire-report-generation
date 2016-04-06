@@ -1,1 +1,0 @@
-\subsection*{\Sexpr{Blocks[[1]]$Payload[[{{i}}]]$Description}}
